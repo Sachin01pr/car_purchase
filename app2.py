@@ -61,7 +61,7 @@ with col1:
     car_model = st.number_input("Model Year", min_value=1990, max_value=2025, value=2018)
 
 with col2:
-    mileage = st.number_input("Mileage (in thousands)", min_value=0, max_value=200, value=30)
+    mileage = st.number_input("Mileage", min_value=0, max_value=200, value=30)
     make = st.selectbox("Car Make", ["bmw", "ferrari", "toyota"])
 
 # ---------------- PREDICTION ----------------
@@ -103,3 +103,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
